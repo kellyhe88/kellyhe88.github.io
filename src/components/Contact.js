@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2rem",
     color: theme.palette.primary.dark,
-    margin: "4rem 0 3rem 0",
+    margin: "3rem 0 3rem 0",
   },
   subtitle: {
     color: theme.palette.primary.dark,
