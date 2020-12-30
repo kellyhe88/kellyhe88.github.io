@@ -22,11 +22,11 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ alignItems: 'center' }}>
         <Toolbar scrollBehavior="smooth">
-          <Button color="inherit" href='#intro'>Home</Button>
-          <Button color="inherit" href='https://www.qmenu.us/#/shanghai-express-marlton' target="_blank">Order Online</Button>
-          <Button color="inherit" href='#contact'>Contact & Info</Button>
+          <Button color="inherit" href='#intro'> Home </Button>
+          <Button color="inherit" href='https://www.qmenu.us/#/shanghai-express-marlton' target="_blank"> Order Online </Button>
+          <Button color="inherit" href='#contact'> Contact & Info </Button>
         </Toolbar>
       </AppBar>
     </div>

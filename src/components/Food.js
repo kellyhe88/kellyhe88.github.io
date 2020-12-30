@@ -73,7 +73,7 @@ export default function Food() {
 
   return (
     <div>
-      <Box height="5.5rem" />
+      <Box height="4rem" />
 
       <Box className={classes.contentArea}>
 

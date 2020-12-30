@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Contact from "./Contact";
 import Food from "./Food";
+import Footer from "./Footer";
 
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -26,6 +27,7 @@ export const Home = () => {
       </div>
       <div id="contact">
         <Contact />
+        <Footer />
       </div>
 
 

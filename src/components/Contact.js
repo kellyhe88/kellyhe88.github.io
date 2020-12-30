@@ -114,7 +114,7 @@ const Intro = () => {
     <Box className={classes.contentArea}>
 
       <Typography className={classes.title}>
-        Contact and Info
+        Contact & Info
       </Typography>
       <Box className={classes.info}>
         <Box className={classes.info1}>
