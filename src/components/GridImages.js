@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignContent: 'center',
-    margin: "2rem 0 2rem 0",
+    margin: "0 0 0 0",
     // border: "1px white solid",
     // overflow: 'hidden',
     // backgroundColor: theme.palette.background.paper,

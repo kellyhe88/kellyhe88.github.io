@@ -36,15 +36,15 @@ const useStyles = makeStyles((theme) => ({
     // display: "flex",
     // flexDirection: "rtl",
     // border: "2px black solid",
-    padding: "520px 0 0 0",
+    padding: "500px 0 0 0",
     [theme.breakpoints.down("xl")]: {
-      padding: "520px 0 0 0"
+      padding: "500px 0 0 0"
     },
     [theme.breakpoints.down("md")]: {
-      padding: "420px 0 0 0"
+      padding: "400px 0 0 0"
     },
     [theme.breakpoints.down("sm")]: {
-      padding: "270px 0 0 0"
+      padding: "250px 0 0 0"
     },
   }
 }));

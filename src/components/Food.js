@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import OrderButton from './OrderButton.js';
+// import OrderButton from './OrderButton.js';
 import GridImages from './GridImages';
-import { Typography, Avatar, Grid, Box } from "@material-ui/core";
+import { Typography, Avatar, Grid, Box, Divider } from "@material-ui/core";
 import StarIcon from '@material-ui/icons/Star';
 import Typed from "react-typed";
 
@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
   },
   left: {
     width: "60%",
-    margin: "1rem 0 1rem 0",
+    margin: "0 0 4rem 0",
     [theme.breakpoints.down("sm")]: {
       width: "95%",
-      margin: "1rem -0.75rem 1rem auto"
+      margin: "0 -0.75rem 2rem auto"
     },
   },
   right: {
@@ -73,20 +73,23 @@ export default function Food() {
 
   return (
     <div>
+      <Box height="5.5rem" />
 
       <Box className={classes.contentArea}>
+
         <Box className={classes.left}>
           <GridImages />
         </Box>
         <Box className={classes.right} >
-          <Box margin="3rem 0 1rem 0">
+          <Box margin="0 0 1rem 0">
             <Typography className={classes.subtitle}>
               Hi Everyone! <br /> <br />
               We are a family-owned Chinese restaurant, and we've been open for over 29 years!
               We hope you enjoy the food as much as we do. Thank you to all of our loyal customers!<br /> <br />
               - Shanghai Express
-          </Typography>
+            </Typography>
           </Box>
+          <Divider />
           <Box className={classes.reviews}>
             <Typography className={classes.title}>
               Reviews from Google <br />
@@ -125,10 +128,11 @@ export default function Food() {
 
           </Box>
 
-          <Box></Box>
 
         </Box>
+
       </Box >
+
     </div>
   );
 }

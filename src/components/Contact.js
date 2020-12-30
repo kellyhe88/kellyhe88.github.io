@@ -7,6 +7,9 @@ import info2 from "../img/clock.png";
 import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import PaymentIcon from '@material-ui/icons/Payment';
+import DriveEtaIcon from '@material-ui/icons/DriveEta';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
 
 // CSS STYLES
@@ -42,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2rem",
     color: theme.palette.primary.dark,
-    margin: "2.5rem 0 2rem 0",
+    margin: "4rem 0 3rem 0",
   },
   subtitle: {
     color: theme.palette.primary.dark,
@@ -64,13 +67,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "left",
     [theme.breakpoints.down("xl")]: {
-      width: "18%",
+      width: "21%",
     },
     [theme.breakpoints.down("lg")]: {
-      width: "20%",
+      width: "25%",
     },
     [theme.breakpoints.down("md")]: {
-      width: "25%",
+      width: "30%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "90%",
@@ -84,13 +87,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "left",
     [theme.breakpoints.down("xl")]: {
-      width: "18%",
+      width: "21%",
     },
     [theme.breakpoints.down("lg")]: {
-      width: "20%",
+      width: "25%",
     },
     [theme.breakpoints.down("md")]: {
-      width: "25%",
+      width: "30%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "90%",
@@ -141,7 +144,10 @@ const Intro = () => {
               </Link>
             </Box>
             <br />
-            <Box margin="0 0 .2rem 0">We accept major credit cards, cash, Venmo, and PayPal</Box> <br />
+            <Box display="flex" flexDirection="row">
+              <PaymentIcon />
+              <Box margin="0 0 .2rem .5rem"> We accept major credit cards,<br />  cash, Venmo, and PayPal</Box> <br />
+            </Box>
 
           </Typography>
         </Box>
@@ -152,15 +158,24 @@ const Intro = () => {
           <Avatar className={classes.avatar} src={info2} alt="Info"></Avatar>
 
           <Typography className={classes.subtitle}>
-            <Box margin="0 0 .2rem 0">Pick Up and Delivery <br />(No Dine-In Currently)</Box> <br />
+            <Box display="flex" flexDirection="row">
+              <DriveEtaIcon />
+              <Box margin="0 0 .2rem .5rem">Pick Up and Delivery <br />(No Dine-In Currently)</Box> <br />
+            </Box>
+            <br />
+            <Box display="flex" flexDirection="row">
+              <DateRangeIcon />
+              <Box display="flex" flexDirection="column">
+                <Box margin="0 0 .2rem .5rem">Monday: 11am - 9pm</Box>
+                <Box margin="0 0 .2rem .5rem">Tuesday: CLOSED</Box>
+                <Box margin="0 0 .2rem .5rem">Wednesday: 11am - 9pm</Box>
+                <Box margin="0 0 .2rem .5rem">Thursday: 11am - 9pm</Box>
+                <Box margin="0 0 .2rem .5rem">Friday: 11am - 9:30pm</Box>
+                <Box margin="0 0 .2rem .5rem">Saturday: 11am - 9:30pm</Box>
+                <Box margin="0 0 .2rem .5rem">Sunday: 2pm - 9pm</Box>
+              </Box>
+            </Box>
 
-            <Box margin="0 0 .2rem 0">Monday: 11am - 9pm</Box>
-            <Box margin="0 0 .2rem 0">Tuesday: CLOSED</Box>
-            <Box margin="0 0 .2rem 0">Wednesday: 11am - 9pm</Box>
-            <Box margin="0 0 .2rem 0">Thursday: 11am - 9pm</Box>
-            <Box margin="0 0 .2rem 0">Friday: 11am - 9:30pm</Box>
-            <Box margin="0 0 .2rem 0">Saturday: 11am - 9:30pm</Box>
-            <Box margin="0 0 .2rem 0">Sunday: 2pm - 9pm</Box>
           </Typography>
         </Box>
       </Box>
