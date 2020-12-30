@@ -50,9 +50,9 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: "space-around",
     width: "30%",
     textAlign: "left",
-    minHeight: "600px",
+    minHeight: "700px",
     [theme.breakpoints.down("sm")]: {
-      width: "80%",
+      width: "90%",
       margin: "0 auto 1rem auto",
     },
   },

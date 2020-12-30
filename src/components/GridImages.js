@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignContent: 'center',
     margin: "0 0 0 0",
     // border: "1px white solid",
-    // overflow: 'hidden',
+    overflow: 'hidden',
     // backgroundColor: theme.palette.background.paper,
   },
   gridList: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     // transform: 'translateZ(0)',
   },
   gridListTile: {
-    border: `3px ${theme.palette.primary.dark} solid`,
+    // border: `3px ${theme.palette.primary.dark} solid`,
     "&:hover": {
       transform: "scale(1.3)",
       zIndex: 1,
@@ -61,7 +61,7 @@ export default function GridImages() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={300} spacing={1} className={classes.gridList}>
+      <GridList cellHeight={300} spacing={6} className={classes.gridList}>
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={0.6} rows={0.6} className={classes.gridListTile}>
             <img src={tile.img} alt={tile.title} />

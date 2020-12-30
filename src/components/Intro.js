@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
       padding: "400px 0 0 0"
     },
     [theme.breakpoints.down("sm")]: {
-      padding: "250px 0 0 0"
+      padding: "265px 0 0 0"
     },
   }
 }));
