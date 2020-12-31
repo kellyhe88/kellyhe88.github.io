@@ -1,21 +1,24 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Contact from "./Contact";
 import Food from "./Food";
 import Footer from "./Footer";
-
+// import OrderButton from "./OrderButton.js";
 
 import { makeStyles } from "@material-ui/core/styles";
+
+
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
 
 }));
 
+
+
 export const Home = () => {
   const classes = useStyles();
-
   return (
     <div >
       <div id="intro">
@@ -31,7 +34,7 @@ export const Home = () => {
       </div>
 
 
-    </div>
+    </div >
   );
 };
 

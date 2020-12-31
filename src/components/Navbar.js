@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import OrderButton from "./OrderButton.js";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +26,8 @@ export default function ButtonAppBar() {
       <AppBar position="static" style={{ alignItems: 'center' }}>
         <Toolbar scrollBehavior="smooth">
           <Button color="inherit" href='#intro'> Home </Button>
-          <Button color="inherit" href='https://www.qmenu.us/#/shanghai-express-marlton' target="_blank"> Order Online </Button>
+          {/* <OrderButton /> */}
+          {/* <Button color="inherit" href='https://www.qmenu.us/#/shanghai-express-marlton' target="_blank"> Order Online </Button> */}
           <Button color="inherit" href='#contact'> Contact & Info </Button>
         </Toolbar>
       </AppBar>

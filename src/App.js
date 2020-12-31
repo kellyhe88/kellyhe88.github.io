@@ -7,7 +7,7 @@ import Home from "./components/HomePage";
 import Contact from "./components/Contact";
 import Food from "./components/Food";
 
-window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+// window.scroll({ top: 0, left: 0, behavior: 'smooth' })
 
 function App() {
   return (
