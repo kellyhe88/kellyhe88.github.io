@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/kellyhe88.github.io/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/kellyhe88.github.io/static/js/main.df397710.chunk.js",
+    "main.js.map": "/kellyhe88.github.io/static/js/main.df397710.chunk.js.map",
+    "runtime-main.js": "/kellyhe88.github.io/static/js/runtime-main.1405b05f.js",
+    "runtime-main.js.map": "/kellyhe88.github.io/static/js/runtime-main.1405b05f.js.map",
+    "static/js/2.b7915e17.chunk.js": "/kellyhe88.github.io/static/js/2.b7915e17.chunk.js",
+    "static/js/2.b7915e17.chunk.js.map": "/kellyhe88.github.io/static/js/2.b7915e17.chunk.js.map",
+    "static/js/3.9208f657.chunk.js": "/kellyhe88.github.io/static/js/3.9208f657.chunk.js",
+    "static/js/3.9208f657.chunk.js.map": "/kellyhe88.github.io/static/js/3.9208f657.chunk.js.map",
+    "index.html": "/kellyhe88.github.io/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/kellyhe88.github.io/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.b7915e17.chunk.js.LICENSE.txt": "/kellyhe88.github.io/static/js/2.b7915e17.chunk.js.LICENSE.txt",
+    "static/media/Banner3.415378a8.gif": "/kellyhe88.github.io/static/media/Banner3.415378a8.gif",
+    "static/media/beansshrimp.2abd7e2e.jpg": "/kellyhe88.github.io/static/media/beansshrimp.2abd7e2e.jpg",
+    "static/media/chickenskewers.fa3b4f6e.png": "/kellyhe88.github.io/static/media/chickenskewers.fa3b4f6e.png",
+    "static/media/clock.7b5c724f.png": "/kellyhe88.github.io/static/media/clock.7b5c724f.png",
+    "static/media/dicedchicken.f0e313e6.jpg": "/kellyhe88.github.io/static/media/dicedchicken.f0e313e6.jpg",
+    "static/media/eggroll.2d4b614d.jpg": "/kellyhe88.github.io/static/media/eggroll.2d4b614d.jpg",
+    "static/media/generaltsos.3b011689.jpg": "/kellyhe88.github.io/static/media/generaltsos.3b011689.jpg",
+    "static/media/generaltsos2.1d143270.jpg": "/kellyhe88.github.io/static/media/generaltsos2.1d143270.jpg",
+    "static/media/hotnsour.a7e9b988.png": "/kellyhe88.github.io/static/media/hotnsour.a7e9b988.png",
+    "static/media/shanghai-avatar.92e95ba5.jpg": "/kellyhe88.github.io/static/media/shanghai-avatar.92e95ba5.jpg",
+    "static/media/shrimpbrocc.a5fd9e58.jpg": "/kellyhe88.github.io/static/media/shrimpbrocc.a5fd9e58.jpg",
+    "static/media/shrimptoast.17dabfbb.jpg": "/kellyhe88.github.io/static/media/shrimptoast.17dabfbb.jpg",
+    "static/media/wok_logo-min.47123dec.png": "/kellyhe88.github.io/static/media/wok_logo-min.47123dec.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1405b05f.js",
+    "static/js/2.b7915e17.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.df397710.chunk.js"
+  ]
+}
