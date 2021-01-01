@@ -1,5 +1,5 @@
 import React from "react"; // rafce is shortcut
-import { Typography, Avatar, Grid, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 // import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     background: `url(${backgroundGif}) no-repeat center`,
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
-    borderBottom: `3px ${theme.palette.primary.light} solid`,
+    borderBottom: `3px ${theme.palette.primary.dark} solid`,
     [theme.breakpoints.down("xl")]: {
       height: "600px",
     },

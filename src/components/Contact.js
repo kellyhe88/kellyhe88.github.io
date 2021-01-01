@@ -20,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
     backgroundSize: "auto 100%",
-    backgroundColor: "white",
+    backgroundColor: theme.palette.primary.main,
     height: "auto",
     // background: `url(${backgroundImg}) no-repeat center`,
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
-    borderBottom: `3px ${theme.palette.primary.light} solid`,
+    borderBottom: `3px ${theme.palette.primary.dark} solid`,
     // [theme.breakpoints.down("xl")]: {
     //   height: "500px",
     // },
@@ -44,11 +44,17 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: "2rem",
-    color: theme.palette.primary.dark,
-    margin: "3rem 0 3rem 0",
+    color: theme.palette.textColors.dark,
+    margin: "2.5rem 0 0 0",
+    textAlign: "center",
   },
   subtitle: {
-    color: theme.palette.primary.dark,
+    color: theme.palette.textColors.dark,
+    marginBottom: "2.5rem",
+    textAlign: "center",
+  },
+  body: {
+    color: theme.palette.textColors.dark,
     marginBottom: "3rem",
     textAlign: "left",
   },
@@ -58,49 +64,32 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
+      alignItems: 'center'
     },
   },
   info1: {
-    width: "21%",
+    width: "auto",
     // border: "2px black solid",
     display: "flex",
     flexDirection: "row",
     justifyContent: "left",
-    [theme.breakpoints.down("xl")]: {
-      width: "21%",
-    },
-    [theme.breakpoints.down("lg")]: {
-      width: "25%",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "30%",
-    },
+    margin: "0 0 0 3rem",
     [theme.breakpoints.down("sm")]: {
-      width: "90%",
-      margin: "0 auto 0 auto"
+      margin: "0 0 0 -2rem"
     },
   },
   info2: {
-    width: "21%",
+    width: "auto",
     // border: "2px black solid",
     display: "flex",
     flexDirection: "row",
     justifyContent: "left",
-    [theme.breakpoints.down("xl")]: {
-      width: "21%",
-    },
-    [theme.breakpoints.down("lg")]: {
-      width: "25%",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "30%",
-    },
     [theme.breakpoints.down("sm")]: {
-      width: "90%",
-      margin: "0 auto 0 auto"
+      margin: "0 0 0 -2rem"
     },
   },
   link: {
+    color: theme.palette.textColors.dark,
     "&:hover": {
       color: theme.palette.secondary.main,
     }
@@ -113,54 +102,15 @@ const Intro = () => {
   return (
     <Box className={classes.contentArea}>
 
-      <Typography className={classes.title}>
-        Contact & Info
-      </Typography>
+      <Typography className={classes.title}>Contact & Info</Typography>
+      <Typography className={classes.subtitle}>(As of January 1, 2021)</Typography>
       <Box className={classes.info}>
-        <Box className={classes.info1}>
-          <Avatar className={classes.avatar} src={info1} alt="Info"></Avatar>
-          <Typography className={classes.subtitle}>
-            <Box display="flex" flexDirection="row">
-              <RoomIcon />
-              <Link href="https://goo.gl/maps/e9Y4aE43H8j5NYUR7" target="_blank" className={classes.link} underline='none'>
-
-                <Box margin="0 0 .2rem .5rem"> 300 E Greentree Rd #15 <br /> Marlton, NJ 08053</Box>
-              </Link>
-            </Box>
-            <br />
-            <Box display="flex" flexDirection="row">
-              <PhoneIcon />
-              <Box margin="0 0 .2rem .5rem">
-                <Link href="tel:856-983-2495" className={classes.link} underline='none'>(856) 983 2495</Link> <br />
-                <Link href="tel:856-983-2496" className={classes.link} underline='none'>(856) 983 2496</Link> <br />
-              </Box>
-            </Box>
-            <br />
-            <Box display="flex" flexDirection="row">
-              <ThumbUpIcon />
-              <Link href="https://www.facebook.com/TedsChineseFood" className={classes.link} underline='none'>
-
-                <Box margin="0 0 .2rem .5rem"> Like us on Facebook <br /> and follow for updates!</Box>
-              </Link>
-            </Box>
-            <br />
-            <Box display="flex" flexDirection="row">
-              <PaymentIcon />
-              <Box margin="0 0 .2rem .5rem"> We accept major credit cards,<br />  cash, Venmo, and PayPal</Box> <br />
-            </Box>
-
-          </Typography>
-        </Box>
-        <Box width="2%">
-
-        </Box>
         <Box className={classes.info2}>
           <Avatar className={classes.avatar} src={info2} alt="Info"></Avatar>
-
-          <Typography className={classes.subtitle}>
+          <Typography className={classes.body}>
             <Box display="flex" flexDirection="row">
               <DriveEtaIcon />
-              <Box margin="0 0 .2rem .5rem">Pick Up and Delivery <br />(No Dine-In Currently)</Box> <br />
+              <Box margin="0 0 .2rem .5rem">Pick Up and Delivery <br />(No Dine-In)</Box> <br />
             </Box>
             <br />
             <Box display="flex" flexDirection="row">
@@ -178,6 +128,44 @@ const Intro = () => {
 
           </Typography>
         </Box>
+        <Box className={classes.info1}>
+          <Avatar className={classes.avatar} src={info1} alt="Info"></Avatar>
+          <Typography className={classes.body}>
+            <Box display="flex" flexDirection="row">
+              <RoomIcon />
+              <Link href="https://goo.gl/maps/e9Y4aE43H8j5NYUR7" target="_blank" className={classes.link} underline='none'>
+
+                <Box margin="0 0 .2rem .5rem"> 300 E Greentree Rd #15 <br /> Marlton, NJ 08053</Box>
+              </Link>
+            </Box>
+            <br />
+            <Box display="flex" flexDirection="row">
+              <PhoneIcon />
+              <Box margin="0 0 .2rem .5rem">
+                <Link href="tel:856-983-2495" className={classes.link} underline='none'>(856) 983 2495</Link> <br />
+                {/* <Link href="tel:856-983-2496" className={classes.link} underline='none'>(856) 983 2496</Link> <br /> */}
+              </Box>
+            </Box>
+            <br />
+            <Box display="flex" flexDirection="row">
+              <ThumbUpIcon />
+              <Link href="https://www.facebook.com/TedsChineseFood" className={classes.link} underline='none'>
+
+                <Box margin="0 0 .2rem .5rem"> Like us on Facebook <br /> and follow for updates!</Box>
+              </Link>
+            </Box>
+            <br />
+            <Box display="flex" flexDirection="row">
+              <PaymentIcon />
+              <Box margin="0 0 .2rem .5rem"> We accept all major credit<br />cards, cash, Venmo, and <br />PayPal</Box> <br />
+            </Box>
+
+          </Typography>
+        </Box>
+        <Box width="2%">
+
+        </Box>
+
       </Box>
     </Box >
   );

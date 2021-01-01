@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 // import OrderButton from './OrderButton.js';
 import GridImages from './GridImages';
-import { Typography, Avatar, Grid, Box, Divider } from "@material-ui/core";
+import { Typography, Box, Divider } from "@material-ui/core";
 import StarIcon from '@material-ui/icons/Star';
 import Typed from "react-typed";
 
@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     // background: `url(${backgroundImg}) repeat center center`,
     zIndex: 1, // specifies stack order
     // border: "2px white solid",
-    borderBottom: `3px ${theme.palette.primary.light} solid`,
+    backgroundColor: theme.palette.primary.main,
+    borderBottom: `3px ${theme.palette.primary.dark} solid`,
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
     },
@@ -38,10 +39,10 @@ const useStyles = makeStyles((theme) => ({
   },
   left: {
     width: "60%",
-    margin: "0 0 4rem 0",
+    margin: "4rem 0 4rem 0",
     [theme.breakpoints.down("sm")]: {
       width: "95%",
-      margin: "0 -0.75rem 2rem auto"
+      margin: "4rem -0.75rem 2rem auto"
     },
   },
   right: {
@@ -50,10 +51,12 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: "space-around",
     width: "30%",
     textAlign: "left",
-    minHeight: "700px",
+    minHeight: "600px",
+    margin: "4rem 0 1rem 0",
     [theme.breakpoints.down("sm")]: {
       width: "90%",
       margin: "0 auto 1rem auto",
+      minHeight: "700px",
     },
   },
   reviews: {
@@ -64,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem"
   },
   subtitle: {
+    color: theme.palette.textColors.dark,
     fontSize: "1.04rem"
   }
 }));
@@ -73,10 +77,7 @@ export default function Food() {
 
   return (
     <div>
-      <Box height="4rem" />
-
       <Box className={classes.contentArea}>
-
         <Box className={classes.left}>
           <GridImages />
         </Box>
@@ -121,7 +122,7 @@ export default function Food() {
                 "Best Chinese food in south jersey. Owner goes above and beyond for his customers -Neil",
 
               ]}
-                typeSpeed={20}
+                typeSpeed={15}
                 // backSpeed={50}
                 loop />
             </Typography>
