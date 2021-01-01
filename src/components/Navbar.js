@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.barStyle}>
         <Toolbar scrollBehavior="smooth">
-          <Button color="inherit" href='#intro'> Menu </Button>
+          {/* <Button color="inherit" href='#intro'> Menu </Button> */}
           {/* <OrderButton /> */}
           {/* <Button color="inherit" href='https://www.qmenu.us/#/shanghai-express-marlton' target="_blank"> Order Online </Button> */}
           <Button color="inherit" href='#contact'> Contact & Info </Button>
