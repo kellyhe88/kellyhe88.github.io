@@ -24,6 +24,22 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
+  wholeContentArea: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center", // makes it vertically centered
+    textAlign: "center",
+    // width: "100%",
+    height: "auto",
+    // background: `url(${backgroundImg}) repeat center center`,
+    zIndex: 1, // specifies stack order
+    // border: "2px white solid",
+    backgroundColor: theme.palette.primary.main,
+    borderBottom: `3px ${theme.palette.primary.dark} solid`,
+    // [theme.breakpoints.down("sm")]: {
+    //   flexDirection: "column",
+    // },
+  },
   appetizers: {
     display: "block",
     margin: theme.spacing(3),
@@ -39,10 +55,10 @@ const useStyles = makeStyles((theme) => ({
   },
   left: {
     width: "60%",
-    margin: "4rem 0 4rem 0",
+    margin: "0 0 4rem 0",
     [theme.breakpoints.down("sm")]: {
       width: "95%",
-      margin: "4rem -0.75rem 2rem auto"
+      margin: "0 -0.75rem 2rem auto"
     },
   },
   right: {
@@ -52,15 +68,21 @@ const useStyles = makeStyles((theme) => ({
     width: "30%",
     textAlign: "left",
     minHeight: "600px",
-    margin: "4rem 0 1rem 0",
+    margin: "0 0 1rem 0",
     [theme.breakpoints.down("sm")]: {
-      width: "90%",
+      width: "85%",
       margin: "0 auto 1rem auto",
       minHeight: "700px",
     },
   },
   reviews: {
     margin: "1rem 0 2rem 0",
+  },
+  aboutUs: {
+    fontSize: "2rem",
+    color: theme.palette.textColors.dark,
+    margin: "2.5rem 0 1rem 0",
+    textAlign: "center",
   },
   title: {
     color: theme.palette.secondary.main,
@@ -72,13 +94,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Food() {
+export default function AboutUs() {
   const classes = useStyles();
 
   return (
-    <div>
+    <Box className={classes.wholeContentArea}>
+      <Typography className={classes.aboutUs}>About Us</Typography>
       <Box className={classes.contentArea}>
-        <Box className={classes.left}>
+        <Box className={classes.left} >
           <GridImages />
         </Box>
         <Box className={classes.right} >
@@ -120,20 +143,14 @@ export default function Food() {
                 "Great place they treat you like family -Zachary",
                 "Best Chinese. Been going there for 25 years. -Margaret",
                 "Best Chinese food in south jersey. Owner goes above and beyond for his customers -Neil",
-
               ]}
                 typeSpeed={15}
                 // backSpeed={50}
                 loop />
             </Typography>
-
           </Box>
-
-
         </Box>
-
       </Box >
-
-    </div>
+    </Box>
   );
 }

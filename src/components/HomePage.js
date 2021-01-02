@@ -2,7 +2,7 @@ import { React } from "react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Contact from "./Contact";
-import Food from "./Food";
+import AboutUs from "./AboutUs";
 import Footer from "./Footer";
 // import OrderButton from "./OrderButton.js";
 // import { makeStyles } from "@material-ui/core/styles";
@@ -26,7 +26,7 @@ export const Home = () => {
         <Contact />
       </div>
       <div id="aboutus">
-        <Food />
+        <AboutUs />
         <Footer />
       </div>
 
