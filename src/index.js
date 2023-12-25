@@ -34,16 +34,17 @@ const theme = createMuiTheme({
     fontWeightMedium: 500, // unused?
     fontWeightBold: 900,
     fontFamily: [
-      "Avenir",
-      "Roboto"
-      // "Open Sans",
+      "Avenir-Medium",
       // "Questrial",
+      "Trebuchet MS",
+      // "Roboto"
+      // "Open Sans",
       // "Lato",
       // "Clear Sans",
       // "Futura",
       // "Source Sans Pro",
       // "Helvetica",
-      // "sans-serif",
+      "sans-serif",
     ].join(","),
   },
   overrides: {

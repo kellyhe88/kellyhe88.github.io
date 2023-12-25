@@ -26,7 +26,7 @@ export default function Footer() {
       <AppBar position="static" color="secondary" style={{ alignItems: 'center' }}>
         <Toolbar scrollBehavior="smooth" >
           <Typography style={{ color: "white", textAlign: 'center' }}>
-            Last Updated January 1, 2021<br />
+            Last Updated December 25, 2023<br />
             © Copyright 2020 Shanghai Express
           </Typography>
           {/* <Button color="textSecondary" href='#intro'>Home</Button>

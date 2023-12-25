@@ -8,6 +8,9 @@ import Shanghai from "../img/shanghai-avatar.jpg"
 import ShrimpBrocc from "../img/shrimpbrocc.jpg"
 import ShrimpToast from "../img/shrimptoast.jpg"
 import HotNSour from "../img/hotnsour.png"
+import CoinFish from '../img/coinfish.jpeg'
+import Interior from '../img/interior.jpeg'
+
 
 const tileData = [
   {
@@ -26,7 +29,7 @@ const tileData = [
     // featured: true,
   },
   {
-    img: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12794624_1063998940332706_4784734961276649161_n.jpg?_nc_cat=111&ccb=2&_nc_sid=8bfeb9&_nc_ohc=cALDsL6k9OIAX9FUwor&_nc_ht=scontent-lga3-1.xx&oh=efd6a645ad6f6d2927c181b6b360cc74&oe=6012B8B2",
+    img: CoinFish,
     title: 'Coin Fish!',
     // featured: true
   },
@@ -56,7 +59,7 @@ const tileData = [
     title: 'Shrimp Toast',
   },
   {
-    img: "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12670776_1063998950332705_5448880597996950917_n.jpg?_nc_cat=109&ccb=2&_nc_sid=8bfeb9&_nc_ohc=8PRUGxcqL4AAX9iGiwH&_nc_ht=scontent-lga3-1.xx&oh=7c6f5de61bb11f7e4ab97430380f60e0&oe=601212A2",
+    img: Interior,
     title: 'Interior',
   },
   {

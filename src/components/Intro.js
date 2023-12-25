@@ -56,7 +56,6 @@ const Intro = () => {
     <div>
       <Box className={classes.contentArea}>
         <div className={classes.button}><OrderButton /></div>
-
       </Box>
     </div>
 

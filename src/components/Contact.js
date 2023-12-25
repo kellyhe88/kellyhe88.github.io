@@ -10,7 +10,7 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import PaymentIcon from '@material-ui/icons/Payment';
 import DriveEtaIcon from '@material-ui/icons/DriveEta';
 import DateRangeIcon from '@material-ui/icons/DateRange';
-
+import Create from '@material-ui/icons/Create';
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -103,14 +103,20 @@ const Intro = () => {
     <Box className={classes.contentArea}>
 
       <Typography className={classes.title}>Contact & Info</Typography>
-      <Typography className={classes.subtitle}>(As of January 1, 2021)</Typography>
+      <br />
+      {/* <Typography className={classes.subtitle}></Typography> */}
       <Box className={classes.info}>
         <Box className={classes.info2}>
           <Avatar className={classes.avatar} src={info2} alt="Info"></Avatar>
           <Typography className={classes.body}>
             <Box display="flex" flexDirection="row">
               <DriveEtaIcon />
-              <Box margin="0 0 .2rem .5rem">Pick Up and Delivery <br />(No Dine-In)</Box> <br />
+              <Box margin="0 0 .2rem .5rem">Pick Up, Deliver, and <br /> Dine in </Box> <br />
+            </Box>
+            <br />
+            <Box display="flex" flexDirection="row">
+              <Create />
+              <Box margin="0 0 .2rem .5rem">To place an order, call or <br /> order online </Box> <br />
             </Box>
             <br />
             <Box display="flex" flexDirection="row">

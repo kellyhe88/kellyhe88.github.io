@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   gridListTile: {
     // border: `3px ${theme.palette.primary.dark} solid`,
     "&:hover": {
+      transition: "all 0.5s",
       transform: "scale(1.3)",
       zIndex: 1,
       width: "auto",
